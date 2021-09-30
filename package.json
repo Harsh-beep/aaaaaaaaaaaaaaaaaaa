@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Urbaeexyz/wa-bot.git"
+    "url": "git+https://github.com/Harsh-beep/akenoo-bott.git"
   },
   "keywords": [
     "Whatsapp-Bot"
@@ -17,9 +17,9 @@
   "author": "Thoriq",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Urbaeexyz/wa-bot/issues"
+    "url": "https://github.com/Harsh-beep/akenoo-bott/issues"
   },
-  "homepage": "https://github.com/Urbaeexyz/wa-bot#readme",
+  "homepage": "https://github.com/Harsh-beep/akenoo-bott#readme",
   "dependencies": {
     "@dada513/wikipedia-search": "^1.0.1",
     "@mapbox/node-pre-gyp": "^1.0.1",
