@@ -23,7 +23,6 @@
   "dependencies": {
     "@dada513/wikipedia-search": "^1.0.1",
     "@mapbox/node-pre-gyp": "^1.0.1",
-    "@marsron/google-image": "^1.0.4",
     "@open-wa/wa-automate": "^4.21.2",
     "app-root-path": "^3.0.0",
     "axios": "^0.21.1",
