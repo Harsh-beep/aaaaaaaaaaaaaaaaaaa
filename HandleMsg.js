@@ -31,7 +31,6 @@ const { EmojiAPI } = require("emoji-api")
 const puppeteer = require('puppeteer')
 const wiki = require("@dada513/wikipedia-search")
 const sharp = require('sharp')
-const googleImage = require('@marsron/google-image')
 const scrapper = require("youtube-scrapper")
 const Uwuifier = require('uwuifier');
 const uwuifier = new Uwuifier();
@@ -6400,7 +6399,7 @@ console.log(err)
                 }
 				break*/
 		
-		case prefix+'googleimgg':
+		/*case prefix+'googleimgg':
 		if (isLimit(serial)) return aruga.reply(from, `_Hello ${pushname} Your request limit has reached the limit. Please come back tomorrow!_\n*(Daily limit reset at 12:00am IST)*`, id)
 		if (args.length == 0) return aruga.reply(from, `Send orders ${prefix}googleimg aesthetic|number`, id)
 		const searchimage1 = q.split('|')[0]
@@ -6413,7 +6412,7 @@ console.log(err)
 			}
 		 })
 		limitAdd(serial)
-		break
+		break*/
 		
 		case prefix+'googleimg':
 		if (isLimit(serial)) return aruga.reply(from, `_Hello ${pushname} Your request limit has reached the limit. Please come back tomorrow!_\n*(Daily limit reset at 12:00am IST)*`, id)
