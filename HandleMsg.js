@@ -31,7 +31,6 @@ const { EmojiAPI } = require("emoji-api")
 const puppeteer = require('puppeteer')
 const wiki = require("@dada513/wikipedia-search")
 const sharp = require('sharp')
-const googleImage = require('@marsron/google-image')
 const Uwuifier = require('uwuifier');
 const uwuifier = new Uwuifier();
 
