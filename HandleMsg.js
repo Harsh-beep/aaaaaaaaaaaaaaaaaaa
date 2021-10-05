@@ -8314,43 +8314,7 @@ fs.writeFile(`${sender.id.replace('@c.us', '')}${lvpc}.gif`, downloadd(filee,fil
             aruga.sendFileFromUrl(from, takagiKey.image, 'takagi.jpg','', id)
 			limitAdd(serial)
             break
-			case prefix+'amv':
-			if (!isGroupMsg) return aruga.reply(from, 'This command can only be used in groups!', id)
-			if (isLimit(serial)) return aruga.reply(from, `_Hello ${pushname} Your request limit has reached the limit. Please come back tomorrow!_\n*(Daily limit reset at 12:00am IST)*`, id)
-			if (!isAnime) return await aruga.reply(from, '*Turn on Anime mode please...*', id)
-			if (isamvLimit(serial)) return aruga.reply(from, `_Hello ${pushname} Your request AMV limit has ran out. Please come back tomorrow!_`, id)
-			var found = false
-            const liimidat = JSON.parse(fs.readFileSync('./settings/limit.json'))
-            for(let lmt of liimidat){
-                if(lmt.id === pengirim){
-                    let limitCounts = limitCount-lmt.limit
-				if(limitCounts < 10) return aruga.reply(from, `You don't have sufficient limits for this command...\n*Minimum limit required is 10*`, id)
-			found = true}}
-			if (args.length == 0) return aruga.reply(from, `This command will send a HQ AMV\nYou can only request *1 AMV daily*\nThis command *costs 10 limits*\n*Q*: Why 10 limits?\n*A*: AMV are limited and I don't want them to end quickly..\nWant to help owner with increasing list of AMVs?Then DM owner HQ AMVs\n(Owner no. at #owner command)\n Now to get the AMV type *#amv give* `, id)
-			if (args[0] === 'give') {
-				await aruga.reply(from, `Please wait, AMV size could be large so your patience would be appreciated`, id).then(res => {
-				limitAdd(serial)
-				limitAdd(serial)
-				limitAdd(serial)
-				limitAdd(serial)
-				limitAdd(serial)
-				limitAdd(serial)
-				limitAdd(serial)
-				limitAdd(serial)
-				limitAdd(serial)
-				limitAdd(serial)
-				amvlimitAdd(serial)
-                    const amv = [
-        './media/video/1 (1).mp4','./media/video/1 (2).mp4','./media/video/1 (3).mp4','./media/video/1 (4).mp4','./media/video/1 (5).mp4','./media/video/1 (6).mp4','./media/video/1 (7).mp4','./media/video/1 (8).mp4','./media/video/1 (9).mp4','./media/video/1 (11).mp4','./media/video/1 (12).mp4','./media/video/1 (13).mp4','./media/video/1 (14).mp4','./media/video/1 (15).mp4','./media/video/1 (16).mp4','./media/video/1 (17).mp4','./media/video/1 (18).mp4','./media/video/1 (19).mp4','./media/video/1 (20).mp4','./media/video/1 (21).mp4','./media/video/1 (22).mp4','./media/video/1 (23).mp4','./media/video/1 (24).mp4','./media/video/1 (25).mp4','./media/video/1 (26).mp4','./media/video/1 (27).mp4','./media/video/1 (28).mp4','./media/video/1 (29).mp4','./media/video/1 (30).mp4','./media/video/1 (31).mp4','./media/video/1 (32).mp4','./media/video/1 (33).mp4','./media/video/1 (34).mp4','./media/video/1 (35).mp4','./media/video/1 (36).mp4','./media/video/1 (37).mp4','./media/video/1 (38).mp4','./media/video/1 (39).mp4','./media/video/1 (40).mp4','./media/video/1 (41).mp4','./media/video/1 (42).mp4','./media/video/1 (43).mp4','./media/video/1 (44).mp4','./media/video/1 (45).mp4','./media/video/1 (46).mp4','./media/video/1 (47).mp4','./media/video/1 (48).mp4','./media/video/1 (49).mp4','./media/video/1 (50).mp4','./media/video/1 (51).mp4','./media/video/1 (52).mp4','./media/video/1 (53).mp4','./media/video/1 (54).mp4','./media/video/1 (55).mp4','./media/video/1 (56).mp4','./media/video/1 (57).mp4','./media/video/1 (58).mp4','./media/video/1 (59).mp4','./media/video/1 (60).mp4','./media/video/1 (61).mp4','./media/video/1 (62).mp4','./media/video/1 (63).mp4','./media/video/1 (64).mp4','./media/video/1 (65).mp4','./media/video/1 (66).mp4','./media/video/1 (67).mp4','./media/video/1 (68).mp4','./media/video/1 (69).mp4','./media/video/1 (70).mp4','./media/video/1 (71).mp4','./media/video/1 (72).mp4','./media/video/1 (73).mp4','./media/video/1 (74).mp4','./media/video/1 (75).mp4','./media/video/1 (76).mp4','./media/video/1 (77).mp4','./media/video/1 (78).mp4','./media/video/1 (79).mp4','./media/video/1 (80).mp4','./media/video/1 (81).mp4','./media/video/1 (82).mp4','./media/video/1 (83).mp4','./media/video/1 (84).mp4','./media/video/1 (85).mp4','./media/video/1 (86).mp4','./media/video/1 (87).mp4','./media/video/1 (88).mp4','./media/video/1 (89).mp4','./media/video/1 (90).mp4','./media/video/1 (91).mp4','./media/video/1 (92).mp4','./media/video/1 (93).mp4','./media/video/1 (94).mp4','./media/video/1 (95).mp4','./media/video/1 (96).mp4','./media/video/1 (97).mp4','./media/video/1 (98).mp4','./media/video/1 (99).mp4','./media/video/1 (100).mp4','./media/video/1 (102).mp4','./media/video/1 (103).mp4','./media/video/1 (104).mp4','./media/video/1 (105).mp4','./media/video/1 (106).mp4','./media/video/1 (107).mp4','./media/video/1 (108).mp4','./media/video/1 (109).mp4','./media/video/1 (110).mp4','./media/video/1 (111).mp4','./media/video/1 (112).mp4','./media/video/1 (113).mp4','./media/video/1 (114).mp4','./media/video/1 (115).mp4'
-        ]
-        let randomamv = amv[Math.floor(Math.random() * amv.length)]
-		console.log(`Sending AMV from ${randomamv}...`)
-        aruga.sendFile(from , randomamv ,'','*❗🎧WEAR EARPHONES FOR BETTER EXPERIENCE🎧❗*', id)})
-		
-                }
-			else  return aruga.reply(from, `This command will send a HQ AMV\nYou can only request *1 AMV daily*\nThis command *costs 10 limits*\n*Q*: Why 10 limits?\n*A*: AMV are limited and I don't want them to end quickly..\nWant to help owner with increasing list of AMVs?Then DM owner HQ AMVs\n(Owner no. at #owner command)\n Now to get the AMV type *#amv give*  `, id)
 			
-			break
 			case prefix+'milf':  
 				if (!isGroupMsg) return aruga.reply(from, 'This command can only be used in groups!', id)
 				if (isLimit(serial)) return aruga.reply(from, `_Hello ${pushname} Your request limit has reached the limit. Please come back tomorrow!_\n*(Daily limit reset at 12:00am IST)*`, id)
