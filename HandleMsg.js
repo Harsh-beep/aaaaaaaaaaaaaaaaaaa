@@ -107,7 +107,6 @@ let cogann = JSON.parse(fs.readFileSync('./lib/helper/cogan.json'))
 let cecann = JSON.parse(fs.readFileSync('./lib/helper/cecan.json'))
 let listimg = JSON.parse(fs.readFileSync('./lib/database/listimage.json'))
 let limit = JSON.parse(fs.readFileSync('./settings/limit.json'))
-let amvlimit = JSON.parse(fs.readFileSync('./settings/amvlimit.json'))
 
 let { 
     groupLimit, 
