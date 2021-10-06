@@ -260,7 +260,11 @@ module.exports = HandleMsg = async (aruga, message) => {
 		const getHappyness = letmeHpy[Math.floor(Math.random() * letmeHpy.length)]
 		const neverT = await fs.readFileSync('./lib/config/Utilidades/never.txt').toString().split('\n')
 		const getNeverland = neverT[Math.floor(Math.random() * neverT.length)]
-        const uaOverride = process.env.PORT || 3000;
+        const uaOverride = process.env.UserAgent
+	const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
         const url = args.length !== 0 ? args[0] : ''
         const isQuotedImage = quotedMsg && quotedMsg.type === 'image'
 		const isQuotedVideo = quotedMsg && quotedMsg.type === 'video'
