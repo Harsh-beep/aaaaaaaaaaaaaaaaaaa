@@ -5,6 +5,8 @@ const welcome = require('./lib/welcome')
 const figlet = require('figlet')
 const fs = require('fs-extra')
 const HandleMsg = require('./HandleMsg')
+const express = require("express")
+const app = express()
 
 const start = async (aruga = new aruga()) => {
 		console.log(color('------------------------------------------------------------------------', 'white'))
@@ -46,3 +48,5 @@ const start = async (aruga = new aruga()) => {
 create(options(start))
     .then((aruga) => start(aruga))
     .catch((err) => console.error(err))
+
+app.listen(process.env.PORT || 3000)
