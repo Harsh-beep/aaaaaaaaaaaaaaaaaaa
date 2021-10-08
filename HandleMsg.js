@@ -7485,7 +7485,7 @@ fs.writeFile(`${sender.id.replace('@c.us', '')}${lvpc}.gif`, downloadd(filee,fil
 			limitAdd(serial)})}
 				break
 				
-				case prefix+'spank':
+				/*case prefix+'spank':
 				if(!isGroupMsg) return aruga.reply(from, 'This feature can only be used within Groups!', id)
 				if (isLimit(serial)) return aruga.reply(from, `_Hello ${pushname} Your request limit has reached the limit. Please come back tomorrow!_\n*(Daily limit reset at 12:00am IST)*`, id)
 				if (quotedMsg){
@@ -7499,7 +7499,7 @@ fs.writeFile(`${sender.id.replace('@c.us', '')}${lvpc}.gif`, downloadd(filee,fil
 				axios.get(`https://hardianto-chan.herokuapp.com/api/tools/webptomp4?url=${res.data.url}&apikey=hardianto`).then(tes => {
                 aruga.sendVideoAsGif(from,  tes.data.result, 'randm.gif', `@${sender.id.replace('@c.us','')} spanked ${body.slice(7)}`,  id)})
 				limitAdd(serial)})}
-				break
+				break*/
 				
 				
 				
